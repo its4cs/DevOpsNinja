@@ -9,7 +9,7 @@ Solution Steps:
             Static Analysis Collector Plug-in
             Cobertura Plugin
 
-https://github.com/its4cs/images/blob/master/1-JenkinsPlugins.png
+![Jenkins Plugin](https://github.com/its4cs/images/blob/master/1-JenkinsPlugins.png)https://github.com/its4cs/images/blob/master/1-JenkinsPlugins.png)
 
         Installed below softwares under Global tool configuration
 
