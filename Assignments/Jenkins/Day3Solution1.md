@@ -49,5 +49,5 @@ https://github.com/its4cs/images/blob/master/3-2-ItemList.png
         Choose Job type as MavenProject
         Provide git repository https://github.com/OpsTree/ContinuousIntegration
         Use clean compile cobertura:cobertura as target
-
-https://github.com/its4cs/images/blob/master/3-3-ItemList.png
+![Code Coverage Workspace]
+(https://github.com/its4cs/images/blob/master/3-3-ItemList.png)
