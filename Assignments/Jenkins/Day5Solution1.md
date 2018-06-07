@@ -8,4 +8,11 @@ Solution Steps:
 Assignment1:
     1. Created Job DSL for
         1. helloworld Job  
+
+![Hello World]()
+
         2. hellotoperson Job (Take SALUTATION as choice parameter & NAME as string parameter)
+
+           ![Hello People with parameters]()
+
+           
