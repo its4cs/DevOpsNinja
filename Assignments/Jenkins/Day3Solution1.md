@@ -2,7 +2,7 @@
 
 Solution Steps:
 
-    Installed below plugins:
+    Installed below mentioned plugins:
             Maven integration plugin
             Checkstyle Plug-in
             FindBugs Plug-in
