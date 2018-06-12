@@ -102,5 +102,4 @@ Created a freestyle job to print "Hello world".
 
 Tried increasing and decrease number of executors and observed the build queue.
 
-![Manual installed Ansible plugin](https://github.com/its4cs/images/blob/master/JenkinsDay1Assignment1-Executor.png)
-
+![Increased Executors](https://github.com/its4cs/images/blob/master/JenkinsDay1Assignment1-Executor.png)
