@@ -98,7 +98,7 @@ Finished: SUCCESS
 
 Created a freestyle job to print "Hello world".
 
-![Manual installed Ansible plugin](https://github.com/its4cs/images/blob/master/JenkinsDay1Assignment1-HelloWorld.png)
+![Hello World](https://github.com/its4cs/images/blob/master/JenkinsDay1Assignment1-HelloWorld.png)
 
 Tried increasing and decrease number of executors and observed the build queue.
 
