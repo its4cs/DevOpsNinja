@@ -60,9 +60,14 @@ Ansible master 192.168.30.9
 
     ```
     $ mkdir ~/.ansible/retry-files
-    $ set retry_files_save_path
+    $ vi ~/.ansible.cfg
     ```
-  * Set the Ansible system `forks` to 10
+   Add following entries to the file:
+   [defaults]
+
+	retry_files_enabled = True
+	retry_files_save_path = ~/.ansible/retry-files
+	forks = 10
 
 # Problem statement: Using Adhoc command
 ```
@@ -71,10 +76,19 @@ Document root /opt/html
 
 - First do this manually and then with jenkins using ansible plugin or execute shell.
 - only use ansible modules.
+ # There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
 ```
- * You will need to install below software on all hosts
-    * nginx
+$ ansible node1 -a "sudo yum install nginx -y"
+$ ansible node2 -a "sudo yum install nginx -y"
+$ ansible node3 -a "sudo yum install nginx -y"
+$ ansible node1 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node2 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node3 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node1 -a "sudo systemctl restart nginx"
+$ ansible node2 -a "sudo systemctl restart nginx"
+$ ansible node3 -a "sudo systemctl restart nginx"
+ 
 ```
-
+$ ansible-playbook nginx.yml
 
 ```
