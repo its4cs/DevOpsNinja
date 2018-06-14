@@ -76,7 +76,8 @@ Document root /opt/html
 
 - First do this manually and then with jenkins using ansible plugin or execute shell.
 - only use ansible modules.
- # There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
+
+## There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
 ```
 $ ansible node1 -a "sudo yum install nginx -y"
 $ ansible node2 -a "sudo yum install nginx -y"
