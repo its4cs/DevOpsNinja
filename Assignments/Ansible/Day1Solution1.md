@@ -70,7 +70,7 @@ Ansible master 192.168.30.9
 	forks = 10
 
 # Problem statement: Using Adhoc command
-```
+
 - Host a static website on minimum three hosts using inventory, content of static website is "Index page of Ansible assignment"
 Document root /opt/html
 
@@ -87,6 +87,7 @@ $ ansible node3 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
 $ ansible node1 -a "sudo systemctl restart nginx"
 $ ansible node2 -a "sudo systemctl restart nginx"
 $ ansible node3 -a "sudo systemctl restart nginx"
+```
  
 ```
 $ ansible-playbook nginx.yml
