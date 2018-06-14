@@ -69,7 +69,7 @@ Ansible master 192.168.30.9
 	retry_files_save_path = ~/.ansible/retry-files
 	forks = 10
 
-# Problem statement: Using Adhoc command
+### Problem statement: Using Adhoc command
 
 - Host a static website on minimum three hosts using inventory, content of static website is "Index page of Ansible assignment"
 Document root /opt/html
@@ -77,7 +77,7 @@ Document root /opt/html
 - First do this manually and then with jenkins using ansible plugin or execute shell.
 - only use ansible modules.
 
-## There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
+### There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
 ```
 $ ansible node1 -a "sudo yum install nginx -y"
 $ ansible node2 -a "sudo yum install nginx -y"
