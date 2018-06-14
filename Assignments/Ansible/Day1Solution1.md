@@ -11,7 +11,7 @@ $sudo pip install ansible
 
 ![pip Ansible install status](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-pipInstall.png)
 
-1. Display the Ansible version and man page to STDOUT.
+2. Display the Ansible version and man page to STDOUT.
 
    ```
    $ ansible --version
@@ -24,7 +24,7 @@ $sudo pip install ansible
    ```
    ![Ansible version](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-version.png)
 
-1. Check all the possible parameters you need to know in ansible.cfg file.
+2. Check all the possible parameters you need to know in ansible.cfg file.
 
 ```
 #inventory      = /etc/ansible/hosts
@@ -44,28 +44,25 @@ $sudo pip install ansible
 #module_set_locale = False
 ```
 
-
-1. Ansible Inventory: Check the default inventory file for ansible control master and use inventory, run ansible ping commands on various inventory groups. Try this on minimum of two virtual machines. (You can use any of these Vagrant)
+3. Ansible Inventory: Check the default inventory file for ansible control master and use inventory, run ansible ping commands on various inventory groups. Try this on minimum of two virtual machines. (You can use any of these Vagrant)
 
    ```
    cat /etc/ansible/hosts
    ```
-   Ansible master 192.168.30.9
+Ansible master 192.168.30.9
 
-   Slave1 - 192.168.30.16
+[node1]
+192.168.30.11
+[node2]
+192.168.30.10
 
-   Slave2 - 192.168.30.10
-
-   
-
-1. In `~/.ansible.cfg` file (create the file if it doesn't exist already) do the following: Already available.
+4. In `~/.ansible.cfg` file (create the file if it doesn't exist already) do the following: Already available.
   * Create a new directory `~/.ansible/retry-files` and set `retry_files_save_path` to it.
 
     ```
     $ mkdir ~/.ansible/retry-files
     $ set retry_files_save_path
     ```
-
   * Set the Ansible system `forks` to 10
 
 ## Problem statement: Using Adhoc command
