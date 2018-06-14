@@ -1,0 +1,16 @@
+---
+- name: "Install Nginx on all hosts"
+  hosts: all
+  become: yes
+  become_user: root
+  gather_facts: true
+  tasks:
+   - name: "Install Nginx"
+     apt: 
+       name: nginx
+       state: present
+   - name: "Copying index.html in /var/www/html"
+     copy:
+       src: /etc/ansible/testIndex.html
+       dest: /var/www/html/
+...
