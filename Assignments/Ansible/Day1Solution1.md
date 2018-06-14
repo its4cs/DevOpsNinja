@@ -9,9 +9,9 @@ $sudo pip install ansible
    /usr/lib/python2.7/site-packages/pip-10.0.1-py2.7.egg/pip/_vendor/urllib3/util/ssl_.py:137: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings InsecurePlatformWarning
 ```
 
-![pip Ansible install status](https://github.com/its4cs/images/blob/master/AnsibleDay1Assignment1-pipInstall.png)
+![pip Ansible install status](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-pipInstall.png)
 
-1. Display the Ansible version and man page to STDOUT.
+2. Display the Ansible version and man page to STDOUT.
 
    ```
    $ ansible --version
@@ -22,9 +22,9 @@ $sudo pip install ansible
     executable location = /usr/bin/ansible
     python version = 2.7.5 (default, Jun 17 2014, 18:11:42) [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
    ```
-   ![Ansible version](https://github.com/its4cs/images/blob/master/AnsibleDay1Assignment1-version.png)
+   ![Ansible version](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-version.png)
 
-1. Check all the possible parameters you need to know in ansible.cfg file.
+2. Check all the possible parameters you need to know in ansible.cfg file.
 
 ```
 #inventory      = /etc/ansible/hosts
@@ -44,41 +44,53 @@ $sudo pip install ansible
 #module_set_locale = False
 ```
 
-
-1. Ansible Inventory: Check the default inventory file for ansible control master and use inventory, run ansible ping commands on various inventory groups. Try this on minimum of two virtual machines. (You can use any of these Vagrant)
+3. Ansible Inventory: Check the default inventory file for ansible control master and use inventory, run ansible ping commands on various inventory groups. Try this on minimum of two virtual machines. (You can use any of these Vagrant)
 
    ```
    cat /etc/ansible/hosts
    ```
-   Ansible master 192.168.30.9
+Ansible master 192.168.30.9
+[node1]
+192.168.30.11
+[node2]
+192.168.30.10
 
-   Slave1 - 192.168.30.16
-
-   Slave2 - 192.168.30.10
-
-   
-
-1. In `~/.ansible.cfg` file (create the file if it doesn't exist already) do the following: Already available.
+4. In `~/.ansible.cfg` file (create the file if it doesn't exist already) do the following: Already available.
   * Create a new directory `~/.ansible/retry-files` and set `retry_files_save_path` to it.
 
     ```
     $ mkdir ~/.ansible/retry-files
-    $ set retry_files_save_path
+    $ vi ~/.ansible.cfg
     ```
+   Add following entries to the file:
+   [defaults]
 
-  * Set the Ansible system `forks` to 10
+	retry_files_enabled = True
+	retry_files_save_path = ~/.ansible/retry-files
+	forks = 10
 
-## Problem statement: Using Adhoc command
-```
+### Problem statement: Using Adhoc command
+
 - Host a static website on minimum three hosts using inventory, content of static website is "Index page of Ansible assignment"
 Document root /opt/html
 
 - First do this manually and then with jenkins using ansible plugin or execute shell.
 - only use ansible modules.
-```
- * You will need to install below software on all hosts
-    * nginx
-```
 
+### There was no index file in /etc/ansible/ so created a file named: /etc/ansible/testIndex.html
+```
+$ ansible node1 -a "sudo yum install nginx -y"
+$ ansible node2 -a "sudo yum install nginx -y"
+$ ansible node3 -a "sudo yum install nginx -y"
+$ ansible node1 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node2 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node3 -m copy -a "src=/etc/ansible/testIndex.html dest=/var/www/html/"
+$ ansible node1 -a "sudo systemctl restart nginx"
+$ ansible node2 -a "sudo systemctl restart nginx"
+$ ansible node3 -a "sudo systemctl restart nginx"
+```
+ 
+```
+$ ansible-playbook nginx.yml
 
 ```
