@@ -9,7 +9,7 @@ $sudo pip install ansible
    /usr/lib/python2.7/site-packages/pip-10.0.1-py2.7.egg/pip/_vendor/urllib3/util/ssl_.py:137: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings InsecurePlatformWarning
 ```
 
-![pip Ansible install status](https://github.com/its4cs/images/blob/master/AnsibleDay1Assignment1-pipInstall.png)
+![pip Ansible install status](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-pipInstall.png)
 
 1. Display the Ansible version and man page to STDOUT.
 
@@ -22,7 +22,7 @@ $sudo pip install ansible
     executable location = /usr/bin/ansible
     python version = 2.7.5 (default, Jun 17 2014, 18:11:42) [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
    ```
-   ![Ansible version](https://github.com/its4cs/images/blob/master/AnsibleDay1Assignment1-version.png)
+   ![Ansible version](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AnsibleDay1Assignment1-version.png)
 
 1. Check all the possible parameters you need to know in ansible.cfg file.
 
