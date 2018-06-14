@@ -6,7 +6,7 @@
   gather_facts: true
   tasks:
    - name: "Install Nginx"
-     apt: 
+     yml: 
        name: nginx
        state: present
    - name: "Copying index.html in /var/www/html"
