@@ -1,0 +1,24 @@
+---
+ - hosts: Debian
+   remote_user: root
+   become: yes
+   become_method: sudo
+   vars:
+    Final: 'Tomcat8 has been installed'
+   tasks:
+   - name: Install Tomcat8
+     apt:
+       name: tomcat8
+       state: present
+   - name: Starting tomcat8.service
+     service:
+       name: tomcat8.service
+       state: stopped
+   - name: Copy war file to Tomcat webapps
+     copy:
+       src: /vagrant/
+       dest: /usr/share/tomcat8/webapps/
+   - name: Starting tomcat8.service
+     service: 
+       name: tomcat8.service 
+       state: started
