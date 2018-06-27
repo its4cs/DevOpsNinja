@@ -18,7 +18,7 @@
 
    5. ###### Created 2 Security Groups ( SecurityGrpWin & SecurityGrpLin ) ###### 
 
-      ![Security Groups](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-securityGrp.png)
+      ![Security Groups](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-securityGrps.png)
 
       
 

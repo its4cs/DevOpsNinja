@@ -47,6 +47,7 @@
        * Apache run  on 8082 port
    $ ansible Debian -m lineinfile -u root -a "path=/etc/apache2/ports.conf state=present regexp='Listen 80' line='Listen 8082'"
    
+   -- Playbook output --
    192.168.30.22 | SUCCESS => {
        "backup": "", 
        "changed": true, 
