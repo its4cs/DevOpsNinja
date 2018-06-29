@@ -20,23 +20,21 @@
 
       ![Security Groups](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-securityGrps.png)
 
-      
-
 2. ##### Task 2 Solution: ##### 
 
-    1. ###### Created two Instances ( & )
+    1. ###### Created two Instances ( Amazon Linux & Windows Server 2012 R2)
 
-       ![Route tables](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-.png)
+       ![Route tables](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-instances.png)
 
-    2. ###### asasa
+    2. ###### Ping the instances from each other
 
-       ![Route tables](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-.png)
+       1. ###### Ping from Windows instance to Linux instance
 
-    3. ###### asas
+          ![Route tables](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-pingWin2Lin.png)
 
-       
+       2. ###### Ping from Linux instance to Windows instance
 
-    4. ###### a   
+          ![Route tables](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-pingLin2Win.png)
 
 3. ##### Task 3 Solution: Delete the infra created so far and create the same infra using CLI ##### 
 
@@ -74,7 +72,11 @@
 
          ![EC2 Security Group](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-securitygrp.png)
 
-      5. a
+      5. Created one public subnet named PublicSubnet1 and a private subnet named as PrivateSubnet1 in the VPC.
+
+      6. Created 2 Route Tables (PublicRouteTable & PrivateRouteTable)
+
+      7. Created an Internet Gateway for Public Subnet (Ninja-IGW)
 
    
 
