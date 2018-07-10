@@ -21,15 +21,19 @@
 
        ![IGW created](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-manual-igw.png)
 
-   5. 
+   5. ###### Created two NAT Gateways  and attached them to public subnets. ###### 
 
-   6. ###### Created an Internet Gateway for Public Subnet (Ninja-IGW) ###### 
+      ![IGW](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-NATGW-EIP.png)
 
-      ![IGW](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-igw.png)
+   6. ###### Created six EC2 Instances i.e. Windows Public A, Windows Public B, Ubuntu Private A, Ubuntu Private B, Ubuntu Private2 A, Ubuntu Private2 B. ###### 
 
-   7. ###### Created 2 Security Groups ( SecurityGrpWin & SecurityGrpLin ) ###### 
+      ![Instances](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6Instances.png)
 
-      ![Security Groups](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-securityGrps.png)
+   7. a
+
+   8. a
+
+   9. 
 
 2. ##### Task 2 Solution: ##### 
 
