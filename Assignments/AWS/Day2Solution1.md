@@ -23,6 +23,9 @@
 
    5. ###### Created two NAT Gateways  and attached them to public subnets. ###### 
 
+      1.  Two Elastic IPs assigned to each NAT Gateway.
+      2. Updated route table of respective private subnets.
+
       ![IGW](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-NATGW-EIP.png)
 
    6. ###### Created six EC2 Instances  ###### 
