@@ -9,23 +9,27 @@
 
    3. ###### Created four Route Tables. ###### 
 
-       Public Route Table attached to each of the Public Subnets created earlier.
-
-       Protected Route Table attached to each Protected Subnets created earlier.
-
-       Respective Private Route Table is attached to each Private Subnet.
+       - Public Route Table attached to each of the Public Subnets created earlier.
+       - Protected Route Table attached to each Protected Subnets created earlier.
+       - Respective Private Route Table is attached to each Private Subnet.
 
        ![Route tables created](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-4routetables.png)
 
-   4. ###### Created Internet Gateway named IGW-Day2Task1. ###### 
+   4. ###### Created Internet Gateway named IGW-Day2Task1 and attached it with public route table. ###### 
 
        ![IGW created](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-manual-igw.png)
+
+       ![IGW attached with RT](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-attachIGWwithPubRT.png)
 
    5. ###### Created two NAT Gateways  and attached them to public subnets. ###### 
 
       ![IGW](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-NATGW-EIP.png)
 
-   6. ###### Created six EC2 Instances i.e. Windows Public A, Windows Public B, Ubuntu Private A, Ubuntu Private B, Ubuntu Private2 A, Ubuntu Private2 B. ###### 
+   6. ###### Created six EC2 Instances  ###### 
+
+      1. Win-Pub-A & Win-Pub-B, 
+      2. LinuxPvtA & LinuxPvtB, 
+      3. UbuntuPvtA & UbuntuPvtB.
 
       ![Instances](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6Instances.png)
 
