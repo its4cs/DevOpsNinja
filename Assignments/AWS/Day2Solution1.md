@@ -7,7 +7,7 @@
 
        ![Created 6 subnets](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6subnets.png)
 
-       - Three different types of subnets in both availability zones of Mumbai region makes sure that this setup will be highly available.
+       - Three different types of subnets in both availability zones of Mumbai region makes sure that this setup will be **<u>highly available</u>**.
 
        ![Highly available Infra](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-highlyAvlbl.png)
 
