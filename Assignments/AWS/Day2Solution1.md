@@ -5,7 +5,7 @@
 
    2. ###### Created two each of the public, private and protected subnets for newly created VPC.
 
-       ![Created 6 subnets](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-highlyAvlbl.png)
+       ![Created 6 subnets](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6subnets.png)
 
        - Three different types of subnets in both availability zones of Mumbai region makes sure that this setup will be highly available.
 
