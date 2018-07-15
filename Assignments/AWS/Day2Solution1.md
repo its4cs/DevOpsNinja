@@ -5,7 +5,11 @@
 
    2. ###### Created two each of the public, private and protected subnets for newly created VPC.
 
-       ![Created 6 subnets](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6subnets.png)
+       ![Created 6 subnets](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-highlyAvlbl.png)
+
+       - Three different types of subnets in both availability zones of Mumbai region makes sure that this setup will be highly available.
+
+       ![Highly available Infra](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-highlyAvlbl.png)
 
    3. ###### Created four Route Tables. ###### 
 
@@ -19,6 +23,8 @@
 
        ![IGW created](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-manual-igw.png)
 
+       - IWG will allow internet access to the public instances.
+
        ![IGW attached with RT](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-attachIGWwithPubRT.png)
 
    5. ###### Created two NAT Gateways  and attached them to public subnets. ###### 
@@ -28,11 +34,13 @@
 
       ![IGW](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-NATGW-EIP.png)
 
+      - NAT Gatways and their configuration with Public Subnets and routing in Private Subnets will ensure the Instances in Private network will access Internet via Public instances not vice versa.
+
    6. ###### Created six EC2 Instances  ###### 
 
-      1. Win-Pub-A & Win-Pub-B, 
-      2. LinuxPvtA & LinuxPvtB, 
-      3. UbuntuPvtA & UbuntuPvtB.
+      1. Win-Pub-A & Win-Pub-B,  (Public Instances)
+      2. LinuxPvtA & LinuxPvtB, (Private Instances)
+      3. UbuntuPvtA & UbuntuPvtB. (Protected Instances)
 
       ![Instances](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/AWS-6Instances.png)
 
