@@ -99,6 +99,9 @@
    # docker images
    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
    hello               v0.1                878cd8008adb        4 minutes ago       32.5MB
+   
+   # docker run -i hello:v0.1
+   Hello from 9c81526beca3
    ```
 
 ***
@@ -161,8 +164,8 @@
     <h1> Hello! Everyone. </h1>
     </body>
     </html>
-    
     ```
+    ![Hello Index.html](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/DKR-helloEv.png)
 
 14. Delete docker container and image from local.
 
