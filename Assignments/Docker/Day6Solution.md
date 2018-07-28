@@ -17,7 +17,7 @@
 14. Stop and remove your docker container using docker-compose.
 
 ***
-- #### Solution ####
+- #### docker-compose solutions: ####
    1. Docker Compose is already available:
 
       ```shell
@@ -108,13 +108,12 @@
 
        ![nginx up](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/DKR-nginxup.png)
 
-   13. Stop and remove your docker container using docker-compose.
+   13. Stoped and removed recent docker container using docker-compose.
        ```shell
        $ docker-compose down
        Stopping nginx_databases_1 ... done
        Removing nginx_web_1 ... done
        Removing nginx_databases_1 ... done
        Removing network nginx_default
-       
        ```
 

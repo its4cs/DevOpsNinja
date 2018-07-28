@@ -1,5 +1,5 @@
 ***
-- #### Assignment 1  ####
+- #### Assignment  ####
 
   - #### DOCKERFILE Solutions ####
 

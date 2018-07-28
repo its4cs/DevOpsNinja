@@ -1,5 +1,5 @@
 ***
-- #### Assignment 1 ####
+- #### Assignment ####
 
 1. Signup on dockerhub.
 2. Login on dockerhub and create a repository by providing repo name "mytestrepo" and a little description about the same.
@@ -12,7 +12,7 @@
 9. Push that image to your repo "mytestrepo" on your dockerhub.
 10. Do commandline logout on dockerhub.
 ***
-- #### Solution ####
+- #### Dockerhub solutions ####
    1. Registered on Docker Hub:
 
       ![dockerhub](https://github.com/its4cs/DevOpsNinja/blob/master/Assignments/images/DKR-dockerhub.png)
